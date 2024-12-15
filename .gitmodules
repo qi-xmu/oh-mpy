@@ -68,3 +68,6 @@
 [submodule "lib/arduino-lib"]
 	path = lib/arduino-lib
 	url = https://github.com/arduino/arduino-lib-mpy.git
+[submodule "ports/openharmony/bearpi_ws63"]
+	path = ports/openharmony/bearpi_ws63
+	url = git@git.atr.cool:txd/bearpi_ws63.git
