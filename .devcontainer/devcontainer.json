@@ -1,0 +1,23 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+    "name": "MPY",
+    // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+    // "image": "mcr.microsoft.com/devcontainers/base:jammy",
+    "build":{
+        "dockerfile": "../ports/openharmony/bearpi_ws63/Dockerfile",
+        "context": "../ports/openharmony/bearpi_ws63"
+    },
+    // Features to add to the dev container. More info: https://containers.dev/features.
+    // "features": {},
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    // "forwardPorts": [],
+    // Use 'postCreateCommand' to run commands after the container is created.
+    // "postCreateCommand": "apt udpate && apt install python3-pip cmake -y && pip install kconfiglib>=14.1.0 pycparser>=2.21",
+    // Configure tool-specific properties.
+    // "customizations": {},
+    // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+    "remoteUser": "root"
+    // "workspaceMount": "source=${localWorkspaceFolder}/oh-mpy, target=/workspace, type=bind,consistency=cached",
+    // "workspaceFolder": "/workspace"
+}
